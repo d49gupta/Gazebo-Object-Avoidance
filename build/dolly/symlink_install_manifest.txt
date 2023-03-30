@@ -1,0 +1,15 @@
+/home/dharma/dev_ws/install/dolly/share/ament_index/resource_index/package_run_dependencies/dolly
+/home/dharma/dev_ws/install/dolly/share/ament_index/resource_index/parent_prefix_path/dolly
+/home/dharma/dev_ws/install/dolly/share/dolly/environment/ament_prefix_path.sh
+/home/dharma/dev_ws/install/dolly/share/dolly/environment/ament_prefix_path.dsv
+/home/dharma/dev_ws/install/dolly/share/dolly/environment/path.sh
+/home/dharma/dev_ws/install/dolly/share/dolly/environment/path.dsv
+/home/dharma/dev_ws/install/dolly/share/dolly/local_setup.bash
+/home/dharma/dev_ws/install/dolly/share/dolly/local_setup.sh
+/home/dharma/dev_ws/install/dolly/share/dolly/local_setup.zsh
+/home/dharma/dev_ws/install/dolly/share/dolly/local_setup.dsv
+/home/dharma/dev_ws/install/dolly/share/dolly/package.dsv
+/home/dharma/dev_ws/install/dolly/share/ament_index/resource_index/packages/dolly
+/home/dharma/dev_ws/install/dolly/share/dolly/cmake/dollyConfig.cmake
+/home/dharma/dev_ws/install/dolly/share/dolly/cmake/dollyConfig-version.cmake
+/home/dharma/dev_ws/install/dolly/share/dolly/package.xml

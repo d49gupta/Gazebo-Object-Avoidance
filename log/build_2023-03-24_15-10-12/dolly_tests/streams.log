@@ -1,0 +1,31 @@
+[0.013s] Invoking command in '/home/dharma/dev_ws/build/dolly_tests': AMENT_PREFIX_PATH=/home/dharma/dev_ws/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy /usr/bin/cmake /home/dharma/dev_ws/src/dolly/dolly_tests -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/dolly_tests
+[0.086s] -- The C compiler identification is GNU 9.4.0
+[0.151s] -- The CXX compiler identification is GNU 9.4.0
+[0.157s] -- Check for working C compiler: /usr/bin/cc
+[0.233s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.234s] -- Detecting C compiler ABI info
+[0.303s] -- Detecting C compiler ABI info - done
+[0.320s] -- Detecting C compile features
+[0.322s] -- Detecting C compile features - done
+[0.325s] -- Check for working CXX compiler: /usr/bin/c++
+[0.405s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.406s] -- Detecting CXX compiler ABI info
+[0.493s] -- Detecting CXX compiler ABI info - done
+[0.509s] -- Detecting CXX compile features
+[0.510s] -- Detecting CXX compile features - done
+[0.524s] CMake Warning at CMakeLists.txt:18 (message):
+[0.524s]   Ignition Gazebo 5 or 6 not found, proceeding without that simulator.
+[0.524s] 
+[0.525s] 
+[0.525s] -- Configuring done
+[0.526s] -- Generating done
+[0.527s] CMake Warning:
+[0.527s]   Manually-specified variables were not used by the project:
+[0.528s] 
+[0.528s]     AMENT_CMAKE_SYMLINK_INSTALL
+[0.528s] 
+[0.529s] 
+[0.529s] -- Build files have been written to: /home/dharma/dev_ws/build/dolly_tests
+[0.535s] Invoked command in '/home/dharma/dev_ws/build/dolly_tests' returned '0': AMENT_PREFIX_PATH=/home/dharma/dev_ws/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy /usr/bin/cmake /home/dharma/dev_ws/src/dolly/dolly_tests -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/dolly_tests
+[0.536s] Invoking command in '/home/dharma/dev_ws/build/dolly_tests': AMENT_PREFIX_PATH=/home/dharma/dev_ws/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy /usr/bin/cmake --build /home/dharma/dev_ws/build/dolly_tests -- -j1 -l1
+[0.578s] Invoked command in '/home/dharma/dev_ws/build/dolly_tests' returned '0': AMENT_PREFIX_PATH=/home/dharma/dev_ws/install/dolly_follow:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy /usr/bin/cmake --build /home/dharma/dev_ws/build/dolly_tests -- -j1 -l1

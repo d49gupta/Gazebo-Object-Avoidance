@@ -1,0 +1,45 @@
+[0.017s] Invoking command in '/home/dharma/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dharma/dev_ws/src/my_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/my_package
+[0.295s] -- The C compiler identification is GNU 9.4.0
+[0.543s] -- The CXX compiler identification is GNU 9.4.0
+[0.571s] -- Check for working C compiler: /usr/bin/cc
+[0.697s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.702s] -- Detecting C compiler ABI info
+[0.822s] -- Detecting C compiler ABI info - done
+[0.824s] -- Detecting C compile features
+[0.826s] -- Detecting C compile features - done
+[0.834s] -- Check for working CXX compiler: /usr/bin/c++
+[0.962s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.967s] -- Detecting CXX compiler ABI info
+[1.079s] -- Detecting CXX compiler ABI info - done
+[1.099s] -- Detecting CXX compile features
+[1.099s] -- Detecting CXX compile features - done
+[1.112s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.151s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.152s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.412s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.479s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.616s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.622s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.624s] -- Added test 'lint_cmake' to check CMake code style
+[1.626s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.630s] -- Added test 'xmllint' to check XML markup files
+[1.644s] -- Configuring done
+[1.654s] -- Generating done
+[1.659s] -- Build files have been written to: /home/dharma/dev_ws/build/my_package
+[1.670s] Invoked command in '/home/dharma/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dharma/dev_ws/src/my_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/my_package
+[1.675s] Invoking command in '/home/dharma/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dharma/dev_ws/build/my_package -- -j1 -l1
+[1.722s] Invoked command in '/home/dharma/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dharma/dev_ws/build/my_package -- -j1 -l1
+[1.771s] Invoking command in '/home/dharma/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dharma/dev_ws/build/my_package
+[1.792s] -- Install configuration: ""
+[1.795s] -- Execute custom install script
+[1.799s] -- Symlinking: /home/dharma/dev_ws/install/my_package//launch/listener.launch.py
+[1.814s] -- Symlinking: /home/dharma/dev_ws/install/my_package//launch/talker.launch.py
+[1.828s] CMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[1.833s]   ament_cmake_symlink_install_directory() can't find
+[1.834s]   '/home/dharma/dev_ws/src/my_package/Destination'
+[1.841s] Call Stack (most recent call first):
+[1.843s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[1.845s]   cmake_install.cmake:41 (include)
+[1.845s] 
+[1.845s] 
+[1.846s] Invoked command in '/home/dharma/dev_ws/build/my_package' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dharma/dev_ws/build/my_package

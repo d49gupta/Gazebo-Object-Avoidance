@@ -1,0 +1,4 @@
+source;share/dharma_pkg/local_setup.bash
+source;share/dharma_pkg/local_setup.dsv
+source;share/dharma_pkg/local_setup.sh
+source;share/dharma_pkg/local_setup.zsh

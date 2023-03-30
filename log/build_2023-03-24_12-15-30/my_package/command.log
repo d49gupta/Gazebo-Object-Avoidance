@@ -1,0 +1,6 @@
+Invoking command in '/home/dharma/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dharma/dev_ws/src/my_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/my_package
+Invoked command in '/home/dharma/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dharma/dev_ws/src/my_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/my_package
+Invoking command in '/home/dharma/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dharma/dev_ws/build/my_package -- -j1 -l1
+Invoked command in '/home/dharma/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dharma/dev_ws/build/my_package -- -j1 -l1
+Invoking command in '/home/dharma/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dharma/dev_ws/build/my_package
+Invoked command in '/home/dharma/dev_ws/build/my_package' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dharma/dev_ws/build/my_package

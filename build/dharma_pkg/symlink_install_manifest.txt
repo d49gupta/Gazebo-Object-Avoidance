@@ -1,0 +1,16 @@
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg//launch/dolly.launch.py
+/home/dharma/dev_ws/install/dharma_pkg/share/ament_index/resource_index/package_run_dependencies/dharma_pkg
+/home/dharma/dev_ws/install/dharma_pkg/share/ament_index/resource_index/parent_prefix_path/dharma_pkg
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/environment/ament_prefix_path.sh
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/environment/ament_prefix_path.dsv
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/environment/path.sh
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/environment/path.dsv
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/local_setup.bash
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/local_setup.sh
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/local_setup.zsh
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/local_setup.dsv
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/package.dsv
+/home/dharma/dev_ws/install/dharma_pkg/share/ament_index/resource_index/packages/dharma_pkg
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/cmake/dharma_pkgConfig.cmake
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/cmake/dharma_pkgConfig-version.cmake
+/home/dharma/dev_ws/install/dharma_pkg/share/dharma_pkg/package.xml

@@ -1,0 +1,606 @@
+[0.000000] (-) TimerEvent: {}
+[0.000234] (dolly_follow) JobQueued: {'identifier': 'dolly_follow', 'dependencies': OrderedDict()}
+[0.000273] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.000299] (dolly_gazebo) JobQueued: {'identifier': 'dolly_gazebo', 'dependencies': OrderedDict([('dolly_follow', '/home/dharma/dev_ws/install/dolly_follow')])}
+[0.000328] (dolly_ignition) JobQueued: {'identifier': 'dolly_ignition', 'dependencies': OrderedDict([('dolly_follow', '/home/dharma/dev_ws/install/dolly_follow')])}
+[0.000354] (dolly_tests) JobQueued: {'identifier': 'dolly_tests', 'dependencies': OrderedDict([('dolly_follow', '/home/dharma/dev_ws/install/dolly_follow'), ('dolly_ignition', '/home/dharma/dev_ws/install/dolly_ignition')])}
+[0.000383] (dolly) JobQueued: {'identifier': 'dolly', 'dependencies': OrderedDict([('dolly_follow', '/home/dharma/dev_ws/install/dolly_follow'), ('dolly_gazebo', '/home/dharma/dev_ws/install/dolly_gazebo'), ('dolly_ignition', '/home/dharma/dev_ws/install/dolly_ignition'), ('dolly_tests', '/home/dharma/dev_ws/install/dolly_tests')])}
+[0.000413] (dolly_follow) JobStarted: {'identifier': 'dolly_follow'}
+[0.031224] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'cmake'}
+[0.031589] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '/home/dharma/dev_ws/src/dolly/dolly_follow', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/dolly_follow'], 'cwd': '/home/dharma/dev_ws/build/dolly_follow', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly_follow'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.098845] (-) TimerEvent: {}
+[0.199498] (-) TimerEvent: {}
+[0.295666] (dolly_follow) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.299655] (-) TimerEvent: {}
+[0.403585] (-) TimerEvent: {}
+[0.491904] (dolly_follow) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.503680] (dolly_follow) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.503881] (-) TimerEvent: {}
+[0.595756] (dolly_follow) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.598983] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.605633] (-) TimerEvent: {}
+[0.676060] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.692538] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.693508] (dolly_follow) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.697458] (dolly_follow) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.706820] (-) TimerEvent: {}
+[0.791396] (dolly_follow) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.800506] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.808495] (-) TimerEvent: {}
+[0.902648] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.904803] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.904892] (dolly_follow) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.908707] (-) TimerEvent: {}
+[0.915776] (dolly_follow) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.955738] (dolly_follow) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.956412] (dolly_follow) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.022556] (-) TimerEvent: {}
+[1.144346] (-) TimerEvent: {}
+[1.168018] (dolly_follow) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.213964] (dolly_follow) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[1.244526] (-) TimerEvent: {}
+[1.264339] (dolly_follow) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.283498] (dolly_follow) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.345222] (-) TimerEvent: {}
+[1.411853] (dolly_follow) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.445400] (-) TimerEvent: {}
+[1.455721] (dolly_follow) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.545626] (-) TimerEvent: {}
+[1.610791] (dolly_follow) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.645765] (-) TimerEvent: {}
+[1.746266] (-) TimerEvent: {}
+[1.752509] (dolly_follow) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.838409] (dolly_follow) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.842424] (dolly_follow) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.845053] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.846377] (-) TimerEvent: {}
+[1.946843] (-) TimerEvent: {}
+[1.952606] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.953209] (dolly_follow) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.034631] (dolly_follow) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[2.035957] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.054900] (-) TimerEvent: {}
+[2.113456] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.113997] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.156562] (-) TimerEvent: {}
+[2.187969] (dolly_follow) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.190282] (dolly_follow) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.256830] (-) TimerEvent: {}
+[2.357488] (-) TimerEvent: {}
+[2.411711] (dolly_follow) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[2.471537] (-) TimerEvent: {}
+[2.522368] (dolly_follow) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.575616] (-) TimerEvent: {}
+[2.635686] (dolly_follow) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.637475] (dolly_follow) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.638658] (dolly_follow) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.638995] (dolly_follow) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.640611] (dolly_follow) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.640916] (dolly_follow) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.643121] (dolly_follow) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.644771] (dolly_follow) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.645064] (dolly_follow) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.648088] (dolly_follow) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.655006] (dolly_follow) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.669467] (dolly_follow) StdoutLine: {'line': b'-- Generating done\n'}
+[2.683648] (-) TimerEvent: {}
+[2.686984] (dolly_follow) StdoutLine: {'line': b'-- Build files have been written to: /home/dharma/dev_ws/build/dolly_follow\n'}
+[2.687389] (dolly_follow) CommandEnded: {'returncode': 0}
+[2.688322] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'build'}
+[2.688380] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dharma/dev_ws/build/dolly_follow', '--', '-j1', '-l1'], 'cwd': '/home/dharma/dev_ws/build/dolly_follow', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly_follow'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.741123] (dolly_follow) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dolly_follow\x1b[0m\n'}
+[2.782198] (-) TimerEvent: {}
+[2.881533] (dolly_follow) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dolly_follow.dir/src/dolly_follow.cpp.o\x1b[0m\n'}
+[2.882898] (-) TimerEvent: {}
+[2.983295] (-) TimerEvent: {}
+[3.084679] (-) TimerEvent: {}
+[3.187230] (-) TimerEvent: {}
+[3.300849] (-) TimerEvent: {}
+[3.401415] (-) TimerEvent: {}
+[3.501973] (-) TimerEvent: {}
+[3.621172] (-) TimerEvent: {}
+[3.721852] (-) TimerEvent: {}
+[3.839771] (-) TimerEvent: {}
+[3.944809] (-) TimerEvent: {}
+[4.045356] (-) TimerEvent: {}
+[4.148271] (-) TimerEvent: {}
+[4.249032] (-) TimerEvent: {}
+[4.352647] (-) TimerEvent: {}
+[4.453189] (-) TimerEvent: {}
+[4.561034] (-) TimerEvent: {}
+[4.662055] (-) TimerEvent: {}
+[4.769885] (-) TimerEvent: {}
+[4.870410] (-) TimerEvent: {}
+[4.970994] (-) TimerEvent: {}
+[5.072931] (-) TimerEvent: {}
+[5.173550] (-) TimerEvent: {}
+[5.299566] (-) TimerEvent: {}
+[5.400119] (-) TimerEvent: {}
+[5.501813] (-) TimerEvent: {}
+[5.606918] (-) TimerEvent: {}
+[5.711815] (-) TimerEvent: {}
+[5.823462] (-) TimerEvent: {}
+[5.955914] (-) TimerEvent: {}
+[6.058477] (-) TimerEvent: {}
+[6.187069] (-) TimerEvent: {}
+[6.340455] (-) TimerEvent: {}
+[6.453613] (-) TimerEvent: {}
+[6.554606] (-) TimerEvent: {}
+[6.655087] (-) TimerEvent: {}
+[6.755560] (-) TimerEvent: {}
+[6.856632] (-) TimerEvent: {}
+[6.957691] (-) TimerEvent: {}
+[7.058842] (-) TimerEvent: {}
+[7.159409] (-) TimerEvent: {}
+[7.259893] (-) TimerEvent: {}
+[7.360386] (-) TimerEvent: {}
+[7.460906] (-) TimerEvent: {}
+[7.561408] (-) TimerEvent: {}
+[7.661876] (-) TimerEvent: {}
+[7.762909] (-) TimerEvent: {}
+[7.864119] (-) TimerEvent: {}
+[7.970060] (-) TimerEvent: {}
+[8.080906] (-) TimerEvent: {}
+[8.186412] (-) TimerEvent: {}
+[8.286884] (-) TimerEvent: {}
+[8.387396] (-) TimerEvent: {}
+[8.488002] (-) TimerEvent: {}
+[8.588612] (-) TimerEvent: {}
+[8.703712] (-) TimerEvent: {}
+[8.804753] (-) TimerEvent: {}
+[8.919804] (-) TimerEvent: {}
+[9.021150] (-) TimerEvent: {}
+[9.122539] (-) TimerEvent: {}
+[9.223153] (-) TimerEvent: {}
+[9.332610] (-) TimerEvent: {}
+[9.437606] (-) TimerEvent: {}
+[9.538048] (-) TimerEvent: {}
+[9.639206] (-) TimerEvent: {}
+[9.745363] (-) TimerEvent: {}
+[9.847508] (-) TimerEvent: {}
+[9.961494] (-) TimerEvent: {}
+[10.062125] (-) TimerEvent: {}
+[10.165475] (-) TimerEvent: {}
+[10.270170] (-) TimerEvent: {}
+[10.380679] (-) TimerEvent: {}
+[10.487165] (-) TimerEvent: {}
+[10.594056] (-) TimerEvent: {}
+[10.698814] (-) TimerEvent: {}
+[10.804893] (-) TimerEvent: {}
+[10.909267] (-) TimerEvent: {}
+[10.939491] (dolly_follow) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dolly_follow\x1b[0m\n'}
+[11.034281] (-) TimerEvent: {}
+[11.135030] (-) TimerEvent: {}
+[11.236378] (-) TimerEvent: {}
+[11.337818] (-) TimerEvent: {}
+[11.450942] (-) TimerEvent: {}
+[11.551621] (-) TimerEvent: {}
+[11.653312] (-) TimerEvent: {}
+[11.759168] (-) TimerEvent: {}
+[11.866144] (-) TimerEvent: {}
+[11.974072] (-) TimerEvent: {}
+[12.077012] (-) TimerEvent: {}
+[12.180641] (-) TimerEvent: {}
+[12.288516] (-) TimerEvent: {}
+[12.389116] (-) TimerEvent: {}
+[12.484481] (dolly_follow) StdoutLine: {'line': b'[100%] Built target dolly_follow\n'}
+[12.495064] (-) TimerEvent: {}
+[12.509964] (dolly_follow) CommandEnded: {'returncode': 0}
+[12.545964] (dolly_follow) JobProgress: {'identifier': 'dolly_follow', 'progress': 'install'}
+[12.561989] (dolly_follow) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dharma/dev_ws/build/dolly_follow'], 'cwd': '/home/dharma/dev_ws/build/dolly_follow', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly_follow'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[12.575327] (dolly_follow) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.576196] (dolly_follow) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.576904] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/lib/dolly_follow/dolly_follow\n'}
+[12.588249] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/ament_index/resource_index/package_run_dependencies/dolly_follow\n'}
+[12.595194] (-) TimerEvent: {}
+[12.600645] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/ament_index/resource_index/parent_prefix_path/dolly_follow\n'}
+[12.616879] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/environment/ament_prefix_path.sh\n'}
+[12.636123] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/environment/ament_prefix_path.dsv\n'}
+[12.650815] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/environment/path.sh\n'}
+[12.669652] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/environment/path.dsv\n'}
+[12.679675] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/local_setup.bash\n'}
+[12.691514] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/local_setup.sh\n'}
+[12.696851] (-) TimerEvent: {}
+[12.704835] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/local_setup.zsh\n'}
+[12.715830] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/local_setup.dsv\n'}
+[12.731296] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/package.dsv\n'}
+[12.743652] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/ament_index/resource_index/packages/dolly_follow\n'}
+[12.753236] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/cmake/dolly_followConfig.cmake\n'}
+[12.774689] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/cmake/dolly_followConfig-version.cmake\n'}
+[12.789219] (dolly_follow) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_follow/share/dolly_follow/package.xml\n'}
+[12.799876] (-) TimerEvent: {}
+[12.808613] (dolly_follow) CommandEnded: {'returncode': 0}
+[12.900619] (-) TimerEvent: {}
+[12.999516] (dolly_follow) JobEnded: {'identifier': 'dolly_follow', 'rc': 0}
+[13.000505] (dolly_ignition) JobStarted: {'identifier': 'dolly_ignition'}
+[13.000679] (-) TimerEvent: {}
+[13.022460] (dolly_ignition) JobProgress: {'identifier': 'dolly_ignition', 'progress': 'cmake'}
+[13.022731] (dolly_ignition) Command: {'cmd': ['/usr/bin/cmake', '/home/dharma/dev_ws/src/dolly/dolly_ignition', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/dolly_ignition'], 'cwd': '/home/dharma/dev_ws/build/dolly_ignition', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly_ignition'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[13.100889] (-) TimerEvent: {}
+[13.151883] (dolly_ignition) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[13.203646] (-) TimerEvent: {}
+[13.213314] (dolly_ignition) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[13.217553] (dolly_ignition) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[13.294748] (dolly_ignition) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[13.299485] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[13.306287] (-) TimerEvent: {}
+[13.389328] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[13.402700] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[13.413947] (-) TimerEvent: {}
+[13.414178] (dolly_ignition) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[13.414330] (dolly_ignition) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[13.511312] (dolly_ignition) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[13.518598] (-) TimerEvent: {}
+[13.518825] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[13.604394] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[13.618751] (-) TimerEvent: {}
+[13.622486] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[13.623879] (dolly_ignition) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[13.635547] (dolly_ignition) StderrLine: {'line': b'CMake Warning at CMakeLists.txt:16 (message):\n'}
+[13.635863] (dolly_ignition) StderrLine: {'line': b'  Ignition Gazebo 5 or 6 not found, proceeding without that simulator.\n'}
+[13.635991] (dolly_ignition) StderrLine: {'line': b'\n'}
+[13.636131] (dolly_ignition) StderrLine: {'line': b'\n'}
+[13.636784] (dolly_ignition) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.638313] (dolly_ignition) StdoutLine: {'line': b'-- Generating done\n'}
+[13.638531] (dolly_ignition) StderrLine: {'line': b'CMake Warning:\n'}
+[13.638840] (dolly_ignition) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[13.638965] (dolly_ignition) StderrLine: {'line': b'\n'}
+[13.639119] (dolly_ignition) StderrLine: {'line': b'    AMENT_CMAKE_SYMLINK_INSTALL\n'}
+[13.639243] (dolly_ignition) StderrLine: {'line': b'\n'}
+[13.639365] (dolly_ignition) StderrLine: {'line': b'\n'}
+[13.640779] (dolly_ignition) StdoutLine: {'line': b'-- Build files have been written to: /home/dharma/dev_ws/build/dolly_ignition\n'}
+[13.648118] (dolly_ignition) CommandEnded: {'returncode': 0}
+[13.649388] (dolly_ignition) JobProgress: {'identifier': 'dolly_ignition', 'progress': 'build'}
+[13.649440] (dolly_ignition) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dharma/dev_ws/build/dolly_ignition', '--', '-j1', '-l1'], 'cwd': '/home/dharma/dev_ws/build/dolly_ignition', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly_ignition'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[13.697184] (dolly_ignition) CommandEnded: {'returncode': 0}
+[13.722296] (-) TimerEvent: {}
+[13.780043] (dolly_ignition) JobEnded: {'identifier': 'dolly_ignition', 'rc': 0}
+[13.781728] (dolly_gazebo) JobStarted: {'identifier': 'dolly_gazebo'}
+[13.803055] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'cmake'}
+[13.803745] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/dharma/dev_ws/src/dolly/dolly_gazebo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/dolly_gazebo'], 'cwd': '/home/dharma/dev_ws/build/dolly_gazebo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[13.823388] (-) TimerEvent: {}
+[13.900252] (dolly_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[13.924138] (-) TimerEvent: {}
+[13.989190] (dolly_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[14.010185] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[14.024303] (-) TimerEvent: {}
+[14.124913] (-) TimerEvent: {}
+[14.135465] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[14.137127] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[14.230138] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[14.247872] (-) TimerEvent: {}
+[14.248107] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[14.248201] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[14.248277] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[14.314010] (dolly_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[14.323253] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[14.348112] (-) TimerEvent: {}
+[14.396654] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[14.408356] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[14.410661] (dolly_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[14.427609] (dolly_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[14.432888] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[14.450065] (-) TimerEvent: {}
+[14.458359] (dolly_gazebo) StdoutLine: {'line': b'--   Found bullet, version 2.88\n'}
+[14.550233] (-) TimerEvent: {}
+[14.652865] (-) TimerEvent: {}
+[14.657188] (dolly_gazebo) StdoutLine: {'line': b'-- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") \n'}
+[14.720205] (dolly_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") \n'}
+[14.753447] (-) TimerEvent: {}
+[14.783435] (dolly_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.0.0") \n'}
+[14.824897] (dolly_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[14.853614] (-) TimerEvent: {}
+[14.954115] (-) TimerEvent: {}
+[15.054664] (-) TimerEvent: {}
+[15.155194] (-) TimerEvent: {}
+[15.204027] (dolly_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[15.242769] (dolly_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") \n'}
+[15.251368] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[15.255364] (-) TimerEvent: {}
+[15.263715] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[15.268134] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[15.269189] (dolly_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[15.274845] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[15.295188] (dolly_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[15.338408] (dolly_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[15.352025] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[15.355449] (-) TimerEvent: {}
+[15.364518] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[15.376350] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[15.376765] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[15.394569] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[15.395006] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[15.405557] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[15.405948] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[15.417012] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[15.417410] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[15.427569] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[15.427993] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[15.438169] (dolly_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[15.456439] (-) TimerEvent: {}
+[15.557020] (-) TimerEvent: {}
+[15.656159] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[15.658096] (-) TimerEvent: {}
+[15.661285] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.3.0\n'}
+[15.661987] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[15.680771] (dolly_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") \n'}
+[15.696236] (dolly_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[15.701768] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[15.721394] (dolly_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.2\n'}
+[15.761150] (-) TimerEvent: {}
+[15.764984] (dolly_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[15.772686] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[15.787478] (dolly_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.34.0\n'}
+[15.836254] (dolly_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[15.840104] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[15.841103] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[15.860739] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[15.861242] (-) TimerEvent: {}
+[15.866750] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[15.885959] (dolly_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 6.2.0\n'}
+[15.936035] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[15.940438] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[15.941423] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[15.942595] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[15.944397] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[15.946065] (dolly_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[15.958120] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[15.960877] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.2\n'}
+[15.961457] (-) TimerEvent: {}
+[15.962635] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[15.963489] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[15.967804] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.6.0\n'}
+[15.968656] (dolly_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[16.056185] (dolly_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  \n'}
+[16.061649] (-) TimerEvent: {}
+[16.068157] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[16.084823] (dolly_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.7.4\n'}
+[16.130772] (dolly_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[16.139158] (dolly_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[16.155973] (dolly_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.5.1\n'}
+[16.162923] (-) TimerEvent: {}
+[16.199521] (dolly_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[16.200498] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.2\n'}
+[16.201988] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.13.0\n'}
+[16.203161] (dolly_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.10.0\n'}
+[16.208739] (dolly_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[16.236584] (dolly_gazebo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[16.237047] (dolly_gazebo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[16.264083] (-) TimerEvent: {}
+[16.364744] (-) TimerEvent: {}
+[16.452595] (dolly_gazebo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[16.464904] (-) TimerEvent: {}
+[16.474593] (dolly_gazebo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[16.565475] (-) TimerEvent: {}
+[16.579194] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[16.585324] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[16.586821] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[16.587940] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[16.591310] (dolly_gazebo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[16.596059] (dolly_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.601521] (dolly_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[16.604989] (dolly_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/dharma/dev_ws/build/dolly_gazebo\n'}
+[16.618019] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[16.619354] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'build'}
+[16.619403] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dharma/dev_ws/build/dolly_gazebo', '--', '-j1', '-l1'], 'cwd': '/home/dharma/dev_ws/build/dolly_gazebo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[16.667046] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[16.667540] (-) TimerEvent: {}
+[16.694295] (dolly_gazebo) JobProgress: {'identifier': 'dolly_gazebo', 'progress': 'install'}
+[16.694403] (dolly_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dharma/dev_ws/build/dolly_gazebo'], 'cwd': '/home/dharma/dev_ws/build/dolly_gazebo', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly_gazebo'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[16.710340] (dolly_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.711340] (dolly_gazebo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.712196] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//launch/dolly.launch.py\n'}
+[16.721869] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/brown_eye.png\n'}
+[16.732310] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/casual_female.png\n'}
+[16.741554] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyebrow002.png\n'}
+[16.751304] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/eyelashes01.png\n'}
+[16.760127] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_diffuse.png\n'}
+[16.767717] (-) TimerEvent: {}
+[16.769774] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit01_normal.png\n'}
+[16.779634] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_diffuse.png\n'}
+[16.788075] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/female_casualsuit02_normal.png\n'}
+[16.801731] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/ponytail01_diffuse.png\n'}
+[16.812134] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/shoes05_diffuse.png\n'}
+[16.822019] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/tongue01_diffuse.png\n'}
+[16.830800] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/materials/textures/young_lightskinned_female_diffuse.png\n'}
+[16.840568] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/meshes/casual_female.dae\n'}
+[16.849612] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.config\n'}
+[16.858018] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/model.sdf\n'}
+[16.866048] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/1.png\n'}
+[16.873198] (-) TimerEvent: {}
+[16.875853] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/2.png\n'}
+[16.883724] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/3.png\n'}
+[16.892955] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/4.png\n'}
+[16.903489] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/casual_female/thumbnails/5.png\n'}
+[16.914741] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain (original).jpg\n'}
+[16.924089] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/city_terrain.jpg\n'}
+[16.933471] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/materials/textures/forest.jpg\n'}
+[16.942611] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.config\n'}
+[16.952233] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/city_terrain/model.sdf\n'}
+[16.961640] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/scripts/script.material\n'}
+[16.970016] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/dolly/materials/textures/sheep.jpg\n'}
+[16.977159] (-) TimerEvent: {}
+[16.979242] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.config\n'}
+[16.987642] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/dolly/model.sdf\n'}
+[16.996723] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.frag\n'}
+[17.005946] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/programs/GLSL/Waves.vert\n'}
+[17.013936] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/scripts/ocean.material\n'}
+[17.026608] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/License and source soil_sand_0045_01.txt\n'}
+[17.035886] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds.jpg\n'}
+[17.045015] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_bk.jpg\n'}
+[17.053995] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_dn.jpg\n'}
+[17.062592] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_fr.jpg\n'}
+[17.072431] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_lf.jpg\n'}
+[17.079457] (-) TimerEvent: {}
+[17.081761] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_rt.jpg\n'}
+[17.090026] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/clouds_up.jpg\n'}
+[17.098587] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/normals.dds\n'}
+[17.108278] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/materials/textures/soil_sand_0045_01.jpg\n'}
+[17.118425] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh-simple.dae\n'}
+[17.128168] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.blend\n'}
+[17.137441] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh.dae\n'}
+[17.146036] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/mesh_below.dae\n'}
+[17.156011] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.config\n'}
+[17.165307] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//models/ocean/model.sdf\n'}
+[17.174028] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//rviz/dolly_gazebo.rviz\n'}
+[17.180829] (-) TimerEvent: {}
+[17.182767] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_city.world\n'}
+[17.191237] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo//worlds/dolly_empty.world\n'}
+[17.200204] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.sh\n'}
+[17.209958] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/environment/dolly_gazebo.dsv\n'}
+[17.221301] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/ament_index/resource_index/package_run_dependencies/dolly_gazebo\n'}
+[17.232432] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/ament_index/resource_index/parent_prefix_path/dolly_gazebo\n'}
+[17.241186] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.sh\n'}
+[17.249957] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/environment/ament_prefix_path.dsv\n'}
+[17.259819] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/environment/path.sh\n'}
+[17.268732] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/environment/path.dsv\n'}
+[17.277411] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/local_setup.bash\n'}
+[17.284173] (-) TimerEvent: {}
+[17.286026] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/local_setup.sh\n'}
+[17.295004] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/local_setup.zsh\n'}
+[17.304083] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/local_setup.dsv\n'}
+[17.313357] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/package.dsv\n'}
+[17.326726] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/ament_index/resource_index/packages/dolly_gazebo\n'}
+[17.335874] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig.cmake\n'}
+[17.345477] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/cmake/dolly_gazeboConfig-version.cmake\n'}
+[17.354037] (dolly_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/package.xml\n'}
+[17.368698] (dolly_gazebo) CommandEnded: {'returncode': 0}
+[17.386235] (-) TimerEvent: {}
+[17.417835] (dolly_gazebo) JobEnded: {'identifier': 'dolly_gazebo', 'rc': 0}
+[17.418684] (dolly_tests) JobStarted: {'identifier': 'dolly_tests'}
+[17.431118] (dolly_tests) JobProgress: {'identifier': 'dolly_tests', 'progress': 'cmake'}
+[17.431386] (dolly_tests) Command: {'cmd': ['/usr/bin/cmake', '/home/dharma/dev_ws/src/dolly/dolly_tests', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/dolly_tests'], 'cwd': '/home/dharma/dev_ws/build/dolly_tests', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly_tests'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[17.503998] (dolly_tests) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[17.504338] (-) TimerEvent: {}
+[17.569238] (dolly_tests) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[17.575090] (dolly_tests) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[17.604507] (-) TimerEvent: {}
+[17.651712] (dolly_tests) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[17.653032] (dolly_tests) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[17.705498] (-) TimerEvent: {}
+[17.721491] (dolly_tests) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[17.738940] (dolly_tests) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[17.740169] (dolly_tests) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[17.744027] (dolly_tests) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[17.806485] (-) TimerEvent: {}
+[17.823527] (dolly_tests) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[17.825047] (dolly_tests) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[17.906619] (-) TimerEvent: {}
+[17.911905] (dolly_tests) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[17.927786] (dolly_tests) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[17.928684] (dolly_tests) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[17.942486] (dolly_tests) StderrLine: {'line': b'CMake Warning at CMakeLists.txt:18 (message):\n'}
+[17.942823] (dolly_tests) StderrLine: {'line': b'  Ignition Gazebo 5 or 6 not found, proceeding without that simulator.\n'}
+[17.943017] (dolly_tests) StderrLine: {'line': b'\n'}
+[17.943166] (dolly_tests) StderrLine: {'line': b'\n'}
+[17.943854] (dolly_tests) StdoutLine: {'line': b'-- Configuring done\n'}
+[17.944914] (dolly_tests) StdoutLine: {'line': b'-- Generating done\n'}
+[17.945492] (dolly_tests) StderrLine: {'line': b'CMake Warning:\n'}
+[17.945700] (dolly_tests) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[17.946688] (dolly_tests) StderrLine: {'line': b'\n'}
+[17.947020] (dolly_tests) StderrLine: {'line': b'    AMENT_CMAKE_SYMLINK_INSTALL\n'}
+[17.947145] (dolly_tests) StderrLine: {'line': b'\n'}
+[17.947304] (dolly_tests) StderrLine: {'line': b'\n'}
+[17.948047] (dolly_tests) StdoutLine: {'line': b'-- Build files have been written to: /home/dharma/dev_ws/build/dolly_tests\n'}
+[17.952810] (dolly_tests) CommandEnded: {'returncode': 0}
+[17.954143] (dolly_tests) JobProgress: {'identifier': 'dolly_tests', 'progress': 'build'}
+[17.954211] (dolly_tests) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dharma/dev_ws/build/dolly_tests', '--', '-j1', '-l1'], 'cwd': '/home/dharma/dev_ws/build/dolly_tests', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly_tests'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[17.995858] (dolly_tests) CommandEnded: {'returncode': 0}
+[18.007728] (-) TimerEvent: {}
+[18.064313] (dolly_tests) JobEnded: {'identifier': 'dolly_tests', 'rc': 0}
+[18.070498] (my_package) JobStarted: {'identifier': 'my_package'}
+[18.093628] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'cmake'}
+[18.097209] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'build'}
+[18.107711] (my_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dharma/dev_ws/build/my_package', '--', '-j1', '-l1'], 'cwd': '/home/dharma/dev_ws/build/my_package', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/my_package'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[18.108979] (-) TimerEvent: {}
+[18.173171] (my_package) CommandEnded: {'returncode': 0}
+[18.196508] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'install'}
+[18.196734] (my_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dharma/dev_ws/build/my_package'], 'cwd': '/home/dharma/dev_ws/build/my_package', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/my_package'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[18.207383] (my_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.208733] (my_package) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[18.209106] (-) TimerEvent: {}
+[18.211611] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/launch/listener.launch.py\n'}
+[18.212078] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/launch/talker.launch.py\n'}
+[18.213557] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package\n'}
+[18.215333] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package\n'}
+[18.216316] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh\n'}
+[18.217109] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv\n'}
+[18.217874] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/environment/path.sh\n'}
+[18.218676] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/environment/path.dsv\n'}
+[18.219433] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/local_setup.bash\n'}
+[18.220624] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/local_setup.sh\n'}
+[18.221549] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/local_setup.zsh\n'}
+[18.222365] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/local_setup.dsv\n'}
+[18.222937] (my_package) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/my_package/share/my_package/package.dsv\n'}
+[18.232024] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/ament_index/resource_index/packages/my_package\n'}
+[18.233387] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake\n'}
+[18.234271] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake\n'}
+[18.234668] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dharma/dev_ws/install/my_package/share/my_package/package.xml\n'}
+[18.243526] (my_package) CommandEnded: {'returncode': 0}
+[18.292926] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[18.293934] (dolly) JobStarted: {'identifier': 'dolly'}
+[18.308871] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'cmake'}
+[18.309178] (dolly) Command: {'cmd': ['/usr/bin/cmake', '/home/dharma/dev_ws/src/dolly/dolly', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/dolly'], 'cwd': '/home/dharma/dev_ws/build/dolly', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_gazebo:/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_RESOURCE_PATH', '/home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_gazebo:/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[18.310027] (-) TimerEvent: {}
+[18.389295] (dolly) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[18.411098] (-) TimerEvent: {}
+[18.448865] (dolly) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[18.458276] (dolly) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[18.511220] (-) TimerEvent: {}
+[18.530514] (dolly) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[18.531814] (dolly) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[18.604708] (dolly) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[18.612204] (-) TimerEvent: {}
+[18.620213] (dolly) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[18.620927] (dolly) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[18.624692] (dolly) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[18.708058] (dolly) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[18.709754] (dolly) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[18.713161] (-) TimerEvent: {}
+[18.796168] (dolly) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[18.811255] (dolly) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[18.812194] (dolly) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[18.814198] (-) TimerEvent: {}
+[18.815579] (dolly) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[18.840396] (dolly) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[18.841694] (dolly) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[18.915159] (-) TimerEvent: {}
+[19.016427] (-) TimerEvent: {}
+[19.054005] (dolly) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[19.078122] (dolly) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[19.117184] (-) TimerEvent: {}
+[19.170697] (dolly) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[19.172447] (dolly) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[19.173529] (dolly) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[19.177049] (dolly) StdoutLine: {'line': b'-- Configuring done\n'}
+[19.179336] (dolly) StdoutLine: {'line': b'-- Generating done\n'}
+[19.180799] (dolly) StdoutLine: {'line': b'-- Build files have been written to: /home/dharma/dev_ws/build/dolly\n'}
+[19.186986] (dolly) CommandEnded: {'returncode': 0}
+[19.188434] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'build'}
+[19.188513] (dolly) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dharma/dev_ws/build/dolly', '--', '-j1', '-l1'], 'cwd': '/home/dharma/dev_ws/build/dolly', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_gazebo:/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_RESOURCE_PATH', '/home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_gazebo:/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[19.218280] (-) TimerEvent: {}
+[19.231873] (dolly) CommandEnded: {'returncode': 0}
+[19.258932] (dolly) JobProgress: {'identifier': 'dolly', 'progress': 'install'}
+[19.259379] (dolly) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dharma/dev_ws/build/dolly'], 'cwd': '/home/dharma/dev_ws/build/dolly', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'dharma'), ('SSH_AGENT_PID', '897'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/dharma'), ('OLDPWD', '/home/dharma/dev_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dharma'), ('JOURNAL_STREAM', '8:27500'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dharma'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/dharma-VirtualBox:@/tmp/.ICE-unix/934,unix/dharma-VirtualBox:/tmp/.ICE-unix/934'), ('INVOCATION_ID', '9cee9ca5b5fd4079aad4b53f41ed9c70'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cf02c03_a2cf_4103_8c43_bc5c50865164'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_gazebo:/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_RESOURCE_PATH', '/home/dharma/dev_ws/install/dolly_gazebo/share/dolly_gazebo/worlds'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dharma/dev_ws/build/dolly'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/dharma/dev_ws/install/dolly_gazebo:/home/dharma/dev_ws/install/dolly_follow:/opt/ros/foxy')]), 'shell': False}
+[19.271610] (dolly) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.272603] (dolly) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[19.273268] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/ament_index/resource_index/package_run_dependencies/dolly\n'}
+[19.282912] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/ament_index/resource_index/parent_prefix_path/dolly\n'}
+[19.291907] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/environment/ament_prefix_path.sh\n'}
+[19.301729] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/environment/ament_prefix_path.dsv\n'}
+[19.310305] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/environment/path.sh\n'}
+[19.318900] (-) TimerEvent: {}
+[19.320587] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/environment/path.dsv\n'}
+[19.329120] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/local_setup.bash\n'}
+[19.338263] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/local_setup.sh\n'}
+[19.348883] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/local_setup.zsh\n'}
+[19.363458] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/local_setup.dsv\n'}
+[19.372648] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/package.dsv\n'}
+[19.383221] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/ament_index/resource_index/packages/dolly\n'}
+[19.392195] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/cmake/dollyConfig.cmake\n'}
+[19.401972] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/cmake/dollyConfig-version.cmake\n'}
+[19.410722] (dolly) StdoutLine: {'line': b'-- Symlinking: /home/dharma/dev_ws/install/dolly/share/dolly/package.xml\n'}
+[19.420176] (-) TimerEvent: {}
+[19.424748] (dolly) CommandEnded: {'returncode': 0}
+[19.476848] (dolly) JobEnded: {'identifier': 'dolly', 'rc': 0}
+[19.480089] (-) EventReactorShutdown: {}

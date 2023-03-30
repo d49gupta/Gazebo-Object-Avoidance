@@ -1,0 +1,6 @@
+Invoking command in '/home/dharma/dev_ws/build/dolly_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dharma/dev_ws/src/dolly/dolly_follow -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/dolly_follow
+Invoked command in '/home/dharma/dev_ws/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/dharma/dev_ws/src/dolly/dolly_follow -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dharma/dev_ws/install/dolly_follow
+Invoking command in '/home/dharma/dev_ws/build/dolly_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dharma/dev_ws/build/dolly_follow -- -j1 -l1
+Invoked command in '/home/dharma/dev_ws/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/dharma/dev_ws/build/dolly_follow -- -j1 -l1
+Invoking command in '/home/dharma/dev_ws/build/dolly_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dharma/dev_ws/build/dolly_follow
+Invoked command in '/home/dharma/dev_ws/build/dolly_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/dharma/dev_ws/build/dolly_follow
